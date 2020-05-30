@@ -2,14 +2,20 @@ let html = document.querySelector("#html");
 let style = document.querySelector("#style");
 
 let string = `/* 你好，我是一名前端新人
- * 你好，我是一名前端新人
- * 下面开始加样式啦
+ * 下面代码将会给大家展示一个八卦图
+ * 注意看屏幕的右边，如果你是用手机查看，请看屏幕下方
+ * 让我们先画一个正方形吧~
  */
+
 #div1 {
     border: 1px solid black;
     width: 200px;
     height: 200px;
 }
+
+/* 然后把它变成圆形，加上阴影
+ * 接着上色，八卦图是一黑一白的
+ */ 
 
 #div1 {
     border-radius: 50%;
@@ -20,6 +26,10 @@ let string = `/* 你好，我是一名前端新人
 #div1 {
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);
 }
+
+/* 现在我们就可以画它里面的部分啦
+ * 同样是两个圆，一黑一白。
+ */ 
 
 #div1::before {
     width: 100px;
@@ -42,6 +52,10 @@ let string = `/* 你好，我是一名前端新人
     border-radius: 50%;
     background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 100%);
 }
+
+/* 最后我们给它加点动画吧
+ * 让它自己转动起来！
+ */ 
 
 @keyframes rotate {
     0% {
